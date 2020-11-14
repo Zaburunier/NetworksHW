@@ -45,7 +45,7 @@ namespace NetworksHW {
                 totalIterCounter = totalIterCounter + 1;
                 // Итератор выбрасывает нулевой вектор при переходе на новую кратность в качестве сигнала
                 if (IsNewRate(err)) {
-                    // Записываем в файл промежуточные итоги и обновляем счётчики
+                    // Записываем в файлы промежуточные итоги и обновляем счётчики
                     if (error.CurrentErrorRate != 1) {
                         WriteIntoFile("\n\tОБНАРУЖЕНО " + detectionCounter.ToString() + " ОШИБОК.", infoFile);
                         double detectionRate = (double)detectionCounter / iterationCounter;
