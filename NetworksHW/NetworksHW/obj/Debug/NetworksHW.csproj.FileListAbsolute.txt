@@ -1,0 +1,16 @@
+D:\Study\5_Семестр\СиТК\ДЗ\NetworksHW\NetworksHW\bin\Debug\NetworksHW.exe.config
+D:\Study\5_Семестр\СиТК\ДЗ\NetworksHW\NetworksHW\bin\Debug\NetworksHW.exe
+D:\Study\5_Семестр\СиТК\ДЗ\NetworksHW\NetworksHW\bin\Debug\NetworksHW.pdb
+D:\Study\5_Семестр\СиТК\ДЗ\NetworksHW\NetworksHW\obj\Debug\NetworksHW.csprojAssemblyReference.cache
+D:\Study\5_Семестр\СиТК\ДЗ\NetworksHW\NetworksHW\obj\Debug\NetworksHW.csproj.CoreCompileInputs.cache
+D:\Study\5_Семестр\СиТК\ДЗ\NetworksHW\NetworksHW\obj\Debug\NetworksHW.exe
+D:\Study\5_Семестр\СиТК\ДЗ\NetworksHW\NetworksHW\obj\Debug\NetworksHW.pdb
+D:\Study\5_Семестр\СиТК\ДЗ\NetworksHW\NetworksHW\bin\Debug\NetworksHW.xml
+D:\Study\5_Семестр\СиТК\ДЗ\ДЗ2\NetworksHW\NetworksHW\bin\Debug\NetworksHW.exe.config
+D:\Study\5_Семестр\СиТК\ДЗ\ДЗ2\NetworksHW\NetworksHW\bin\Debug\NetworksHW.xml
+D:\Study\5_Семестр\СиТК\ДЗ\ДЗ2\NetworksHW\NetworksHW\bin\Debug\NetworksHW.exe
+D:\Study\5_Семестр\СиТК\ДЗ\ДЗ2\NetworksHW\NetworksHW\bin\Debug\NetworksHW.pdb
+D:\Study\5_Семестр\СиТК\ДЗ\ДЗ2\NetworksHW\NetworksHW\obj\Debug\NetworksHW.csprojAssemblyReference.cache
+D:\Study\5_Семестр\СиТК\ДЗ\ДЗ2\NetworksHW\NetworksHW\obj\Debug\NetworksHW.csproj.CoreCompileInputs.cache
+D:\Study\5_Семестр\СиТК\ДЗ\ДЗ2\NetworksHW\NetworksHW\obj\Debug\NetworksHW.exe
+D:\Study\5_Семестр\СиТК\ДЗ\ДЗ2\NetworksHW\NetworksHW\obj\Debug\NetworksHW.pdb

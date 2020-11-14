@@ -1,0 +1,120 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>NetworksHW</name>
+    </assembly>
+    <members>
+        <member name="P:NetworksHW.ErrorVector.Vector">
+            <summary>
+            Текущий вектор ошибки
+            </summary>
+        </member>
+        <member name="P:NetworksHW.ErrorVector.CurrentErrorRate">
+            <summary>
+            Текущее значение кратности ошибки
+            </summary>
+        </member>
+        <member name="M:NetworksHW.ErrorVector.GetVectors">
+            <summary>
+            Итератор, перебирающий все комбинации векторов всех кратностей ошибок от 1 до 15 и выбрасывающий все эти комбинации.
+            </summary>
+            <returns>Текущий вектор</returns>
+        </member>
+        <member name="M:NetworksHW.ErrorVector.CheckTheLatter">
+            <summary>
+            Проверяем, является ли текущий вектор ошибки последним из возможных для данной кратности
+            </summary>
+            <returns>Является ли?</returns>
+        </member>
+        <member name="M:NetworksHW.ErrorVector.CreateFirstVector">
+            <summary>
+            Создаём начальный вектор для нового значения кратности
+            </summary>
+        </member>
+        <member name="M:NetworksHW.ErrorVector.MoveToNextVector">
+            <summary>
+            Переходим к следующему вектору данной кратности
+            </summary>
+        </member>
+        <member name="M:NetworksHW.ErrorVector.MoveOneToNext(System.Int32)">
+            <summary>
+            Сдвиг одной единицы на одну позицию влева
+            (с изменением индекса внутри массива единиц)
+            </summary>
+            <param name="oneLevel">Текущее положение сдвигаемой единички</param>
+        </member>
+        <member name="M:NetworksHW.ErrorVector.MoveOnesToNextLayout(System.Int32)">
+            <summary>
+            Установка всех упёршихся в край массива единиц в новое расположение
+            (с изменениями индексов внутри массива единиц)
+            </summary>
+            <param name="oneLevel">
+            Положение первой единицы, доступной для сдвига на 1
+            (остальные будут передвинуты в соседние для этой единицы позиции)
+            </param>
+        </member>
+        <member name="M:NetworksHW.Hamming.Executing(System.Int32[])">
+            <summary>
+            Основной метод для проведения операций с кодом Хэмминга
+            </summary>
+            <param name="data"></param>
+        </member>
+        <member name="M:NetworksHW.Hamming.DataToEncoded(System.Int32[])">
+            <summary>
+            Преобразуем полученную информацию в кодовый вектор
+            </summary>
+            <param name="data">Исходный вектор</param>
+        </member>
+        <member name="M:NetworksHW.Hamming.ApplyError(System.Int32[])">
+            <summary>
+            Наложение на кодовый вектор текущего значения вектора ошибки
+            </summary>
+            <param name="errorVector">Вектор ошибки</param>
+            <returns>Искажённый вектор</returns>
+        </member>
+        <member name="M:NetworksHW.Hamming.ObtainedToDecoded(System.Int32[]@,System.Int32@)">
+            <summary>
+            Вычисление синдрома ошибки и инвертирование бита по найденному порядковому номеру
+            </summary>
+            <param name="vector">Искажённый вектор</param>
+            <param name="bitNumber">Бит, на который указывает синдром ошибки</param>
+        </member>
+        <member name="M:NetworksHW.Hamming.PartialSums(System.Int32[],System.Boolean)">
+            <summary>
+            Получение проверочных битов с помощью сложения по модулю 2
+            </summary>
+            <param name="vector">Кодовый вектор, из которого подсчитываем контрольные суммы</param>
+            <param name="isDecoding">Данный параметр определяет, будут ли для подсчёта контрольных сумм использоваться проверочные биты</param>
+            <returns>Массив проверочных битов</returns>
+        </member>
+        <member name="M:NetworksHW.Hamming.WriteIntoFile(System.String,System.IO.FileStream)">
+            <summary>
+            Запись текстовой информации в файл
+            </summary>
+            <param name="file">Файл, в который заносим строку</param>
+            <param name="strToWrite">Строка, которую заносим в файл</param>
+        </member>
+        <member name="M:NetworksHW.Hamming.IsNewRate(System.Int32[])">
+            <summary>
+            Метод определяет, исчерпал ли итератор варианты вектора ошибок данной кратности. 
+            Это позволяется из-за того, что в качестве сигнала перед переходом на следующую кратность итератор выбрасывает нулевой вектор
+            </summary>
+            <param name="errorVector">Полученное значение вектора ошибки</param>
+            <returns>Произошёл ли переход на новый показатель кратности ошибки?</returns>
+        </member>
+        <member name="M:NetworksHW.Hamming.ToString(System.Int32[])">
+            <summary>
+            Текстовое представление битового массива для вывода в файл
+            </summary>
+            <param name="intArray">Массив нулей и единиц</param>
+            <returns>Строка, соответствующая полученному массиву</returns>
+        </member>
+        <member name="M:NetworksHW.Program.CreatingInfoFile(System.String)">
+            <summary>
+            Создаём файл для записи в корне проекта
+            </summary>
+            <param name="filename">Имя файла</param>
+            <returns>Объект для потокового ввода-вывода</returns>
+        </member>
+    </members>
+</doc>
